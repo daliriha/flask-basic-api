@@ -9,30 +9,35 @@
 
 {% block body %}
     <div class="container">
+        <div class="card">
+            <div class="card-body">
+               
         <input id="url_person_id" type="hidden" value="{{ person_id }}" />
         <div class="section editor">
-            <div>
+            <div class="form-group">
                 <span>Person ID:</span>
                 <span id="person_id"></span>
             </div>
-            <label for="fname">First Name
-                <input id="fname" type="text" />
-            </label>
-            <br />
-            <label for="lname">Last Name
-                <input id="lname" type="text" />
-            </label>
-            <br />
-            <button id="create">Create</button>
-            <button id="update">Update</button>
-            <button id="delete">Delete</button>
-            <button id="reset">Reset</button>
+            <div class="form-group md-form">
+            <label for="fname">First Name</label>
+                <input class="form-control" id="fname" type="text" />
+            </div>
+            <div class="form-group md-form">
+            <label for="lname">Last Name</label>
+                <input  class="form-control" id="lname" type="text" />
+            </div>
+            <button id="create" class="btn btn-success">Create</button>
+            <button id="update" class="btn btn-info">Update</button>
+            <button id="delete" class="btn btn-danger">Delete</button>
+            <button id="reset" class="btn btn-secondary">Reset</button>
         </div>
-        <div class="people">
-            <table>
+        </div>
+        </div>
+        <div class="people mt-5">
+            <table class="table table-striped table-hover">
                 <caption>People</caption>
                 <thead>
-                    <tr>
+                    <tr class="text-center">
                         <th>Creation/Update Timestamp</th>
                         <th>Person</th>
                     </tr>

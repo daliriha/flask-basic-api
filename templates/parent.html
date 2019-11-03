@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
     <title>{% block title %}{% endblock %} Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/theme/css/mdb.min.css" >
     <link rel="stylesheet" href="/static/css/parent.css">
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -13,17 +17,38 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="/static/theme/js/popper.min.js"></script>
+    <script src="/static/theme/js/mdb.min.js"></script>
+
     {% endblock %}
 </head>
-<body>
-<div class="navigation">
-    <span class="buttons">
-        <a href="/">Home</a>
-        <a href="/people">People</a>
-    </span>
-    <span class="page_name">
-        <div>{% block page_name%}{% endblock %}</div>
-    </span>
+<body class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mini-Blog Demo</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                            <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+                            <li><a href="/people"><i class="fa fa-users"></i>People</a></li>
+                            <li><a href="/notes"><i class="fa fa-comments"></i>Notes</a></li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav> 
+        
+<div class="navigation sky-gradient">
+    <h1 class="page_name">
+        {% block page_name%}{% endblock %}
+    </h1>
     <span class="spacer"></span>
 </div>
 

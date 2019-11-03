@@ -2,7 +2,7 @@
  * CSS stylesheet for home page
  */
 
- div.blog {
+ .div.blog {
     margin: 10px 10px 10px 10px;
     border: 2px solid darkgrey;
 }
@@ -12,22 +12,15 @@
     width: 100%;
 }
 
-.blog table caption {
-    font-weight: bold;
-    padding: 10px 0 10px 0;
-    border-bottom: 2px solid darkgrey;
-    background-color: antiquewhite;
-}
-
 .blog table thead {
     padding: 10px 0 10px 0;
 }
 
-th:not(:last-child), td:not(:last-child) {
+.th:not(:last-child), .td:not(:last-child) {
     border-right: 2px solid darkgrey;
 }
 
-td.name {
+.td.name {
     text-align: center;
     width: 175px;
 }
@@ -42,7 +35,7 @@ td.content {
     padding-left: 5px;
 }
 
-tbody tr:nth-child(odd) {
+.tbody tr:nth-child(odd) {
     background-color: gainsboro;
 }
 
@@ -56,7 +49,7 @@ thead tr {
     border-bottom: 2px solid darkgrey;
 }
 
-tbody tr:not(:last-child){
+.tbody tr:not(:last-child){
     border-bottom: 2px solid darkgrey;
 }
 

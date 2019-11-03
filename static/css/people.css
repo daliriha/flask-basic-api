@@ -10,10 +10,10 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    border: 2px solid darkgrey;
+    padding: 20px;
     border-radius: 4px;
     margin-bottom: 5px;
+    color:#fff;
 }
 
 label {
@@ -29,8 +29,7 @@ button {
 }
 
 div.people {
-    margin: 10px 30px 10px 30px;
-    border: 2px solid darkgrey;
+    margin-top: 30px;
 }
 
 table {
@@ -38,26 +37,19 @@ table {
     border-collapse: collapse;
 }
 
-.people table caption {
-    font-weight: bold;
-    padding: 10px 0 10px 0;
-    border-bottom: 2px solid darkgrey;
-    background-color: antiquewhite;
-}
-
 .people table thead {
     padding: 10px 0 10px 0;
 }
 
-th:not(:last-child), td:not(:last-child) {
+.th:not(:last-child), .td:not(:last-child) {
     border-right: 2px solid darkgrey;
 }
 
-tr:nth-child(even) {
+.tr:nth-child(even) {
     background-color: gainsboro;
 }
 
-td {
+.td {
     text-align: center;
 }
 
@@ -75,7 +67,7 @@ thead tr {
     border-bottom: 2px solid darkgrey;
 }
 
-tbody tr:not(:last-child){
+.tbody tr:not(:last-child){
     border-bottom: 2px solid darkgrey;
 }
 
